@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body{
+    background-color:hsl(257, 40%, 49%) ;
+}
+
+
+
+.logo{
+    width: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 18px;
+    gap: 80px;
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.hero-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-text h1{
+    font-size: 28px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.hero-text p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    line-height: 26px;
+}
+
+
+.cta{
+    padding: 16px 94px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color:hsl(257, 40%, 49%) ;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 16px;
+}
+
+.icon{
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+
+@media only screen and (min-width: 1000px){
+    section{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        
+        padding: 12px 46px;
+    }
+    header{
+        padding: 12px 46px;
+    }
+    .logo{
+        width: 20%;
+    }
+
+    .hero-text{
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .hero-text h1 {
+        font-size: 42px;
+    }
+    .hero-text p{
+        padding-right: 73px;
+    }
+
+    footer{
+        display: flex;
+        padding: 0px 56px;
+        justify-content: flex-end;
+    }
+    main{
+        background-image: url("./images/bg-desktop.svg");
+    
+        background-size: cover;
+    }
+}
